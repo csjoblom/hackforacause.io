@@ -1,14 +1,57 @@
 <style>
     #h4c-challenge {
-        height: 500px;
-        background-color: #F0F0F0
+        background-color: #F0F0F0;
+        padding: 75px 0px 75px 0px;
     }
 
-    div#h4c-title {
-        text-decoration: overline underline #ECBE20;
-        display: inline;
+    div#h4c-challenge-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    p#h4c-challenge-title {
+        border-top: 3px solid #ECBE20;
+        border-bottom: 3px solid #ECBE20;
+        font-size: 300%;
+        padding: 5px 0px 5px 0px;
+        margin:0px
+    }
+
+    div#h4c-challenge-description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        text-align: center;
+    }
+
+    p#h4c-challenge-description {
+        font-size: 200%;
+        width: 40%;
+        text-align: center;
+    }
+
+    div#h4c-challenge-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    a#h4c-challenge-button {
+        font-size: 150%;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #ECBE20;
+        padding: 5px 15px 5px 15px;
     }
 </style>
 <div id="h4c-challenge">
-    <div id="h4c-title">2018 CHALLENGE NAME</div>
+    <div id="h4c-challenge-title"><p id="h4c-challenge-title">2018 CHALLENGE NAME</p></div>
+    <div id="h4c-challenge-description">
+        <p id="h4c-challenge-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et cursus mauris. Maecenas malesuada tortor vitae ex molestie venenatis. Duis facilisis elit id urna pretium vestibulum.</p>
+    </div>
+    <div id="h4c-challenge-button"><a id="h4c-challenge-button" href="https://www.w3schools.com/html/">LEARN MORE</a></div>
 </div>
