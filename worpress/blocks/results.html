@@ -1,15 +1,91 @@
 <style>
     #h4c-results {
-        height: 500px;
-        padding-top: 150px;
-        padding-bottom: 150px;
+        padding: 115px 0px 115px 0px;
+        display: flex;
+        flex-direction: row;
     }
 
-    div#h4c-title {
-        text-decoration: overline underline #ECBE20;
-        display: inline;
+    div#h4c-results-row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    @media screen and (max-device-width:750px) {
+        div#h4c-results-image {
+            display: none !important;
+        }
+        div#h4c-results-content {
+            padding-right: 0;
+        }
+        p#h4c-results-description {
+            width: 40%;
+        }
+    }
+
+    div#h4c-results-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding-left: 10%;
+        width: 150%;
+        min-width: 200px;
+    }
+
+    div#h4c-results-content {
+        margin: 0px;
+        padding-right: 10%;
+    }
+
+    div#h4c-results-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        text-align: center;
+    }
+
+    p#h4c-results-title {
+        border-top: 3px solid #ECBE20;
+        border-bottom: 3px solid #ECBE20;
+        font-size: 300%;
+        padding: 5px 0px 5px 0px;
+        margin: 0px;
+    }
+
+    div#h4c-results-description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        text-align: center;
+    }
+
+    p#h4c-results-description {
+        font-size: 200%;
+        width: 75%;
+        text-align: center;
+    }
+
+    a#h4c-results-link {
+        white-space: nowrap;
+        color: #69CDD8;
     }
 </style>
 <div id="h4c-results">
-    <div id="h4c-title">2017 RESULSTS</div>
+    <div id="h4c-results-row">
+        <div id="h4c-results-image">
+            <img src="https://raw.githubusercontent.com/antonioortegajr/hackforacause.io/master/design/17814396_1870515923195405_151101691808413537_o.jpg?token=AMcy8RuzxbhQZycaCjt8pvXWGs2pK0mcks5aW9RowA%3D%3D">
+        </div>
+        <div id="h4c-results-content">
+            <div id="h4c-results-title">
+                <p id="h4c-results-title">2017 HACK RESULTS</p>
+            </div>
+            <div id="h4c-results-description">
+                <p id="h4c-results-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et cursus mauris. Maecenas malesuada tortor vitae ex molestie venenatis. Duis facilisis elit id urna pretium vestibulum. <a id="h4c-results-link" href="https://www.w3schools.com/html/">See the winners. <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </a></p>
+            </div>
+        </div>
+    </div>
 </div>
