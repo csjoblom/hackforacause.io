@@ -1,30 +1,58 @@
 <style>
-    div#h4c-join-team {
-        font-size: x-large;
+    div#h4c-header {
+        background-image: url("https://raw.githubusercontent.com/Hack4Eugene/hackforacause.io/master/design/bg2.png");
+        height: 659px;
+        width: 100%;
+        color: #F2F2F2;
+    }
+
+    div#h4c-title-join {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        text-align: center;
+        font-size: 225%;
+        padding: 75px 0px 5px 0px;
     }
 
     div#h4c-title {
-        font-size: 300%;
-        text-decoration: overline underline #ECBE20;
-        display: inline;
-    }
-
-    .h4c-header-widget {
-        color: #F2F2F2;
-        font-size: x-large;
-        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    div#h4c-main {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        top: -120px;
         position: relative;
+    }
+
+    p#h4c-title {
+        border-top: 3px solid #ECBE20;
+        border-bottom: 3px solid #ECBE20;
+        font-size: 450%;
+        padding: 5px 0px 5px 0px;
+        margin: 0px;
+    }
+
+    .squarebrackets {
+        display: inline-flex;
+        height: 70px;
+        padding-right: 20px;
+    }
+
+    .squarebrackets:before {
+        content: " ";
+        border-left: 6px solid #91DAE3;
+        border-top: 6px solid #91DAE3;
+        border-bottom: 6px solid #91DAE3;
+        margin-right: 10px;
+        padding: 10px 5px 10px 5px;
+    }
+
+    .squarebrackets:after {
+        content: " ";
+        padding: 10px 5px 10px 5px;
+        border-right: 6px solid #91DAE3;
+        border-top: 6px solid #91DAE3;
+        border-bottom: 6px solid #91DAE3;
+        margin-left: 10px;
     }
 
     .heart {
@@ -47,70 +75,74 @@
         }
     }
 
-    .squarebrackets {
-        display: inline-flex;
-        height: 70px;
-    }
-
-    .squarebrackets:before {
-        content: " ";
-        border-left: 6px solid #91DAE3;
-        border-top: 6px solid #91DAE3;
-        border-bottom: 6px solid #91DAE3;
-        margin-right: 10px;
-        padding: 10px 5px 10px 5px;
-    }
-
-    .squarebrackets:after {
-        content: " ";
-        padding: 10px 5px 10px 5px;
-        border-right: 6px solid #91DAE3;
-        border-top: 6px solid #91DAE3;
-        border-bottom: 6px solid #91DAE3;
-        margin-left: 10px;
-    }
-
-    #h4c-buttons {
+    .flexrow {
         display: flex;
-        top: -160px;
+        flex-direction: row;
         position: relative;
         justify-content: center;
         align-items: center;
     }
 
+    .flexcol {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        min-width: 450px;
+    }
+
+    div#h4c-dates {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 30px 0px 20px 0px;
+        font-size: 275%;
+    }
+
+    div#h4c-description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 5px 0px 5px 0px;
+        font-size: 240%;
+    }
     .button {
-        width: 100px;
-        height: 50px;
         background: #ECBE20;
         border: none;
+        padding: 7px 20px 7px 20px;
+        font-size: 150%;
+    }
+    div#h4c-button {
+        padding: 60px 70px 0px 70px
     }
 </style>
-<div id="head-thing" class="h4c-header-widget" style="height:659px; width=100%;">
-    <div id="h4c-main" class="h4c-header-widget">
-        <div>
-            <div id="h4c-join-team" class="h4c-header-widget">(Join Team &lt;choose problem&gt; create solution)</div>
-            <div class="squarebrackets">
-                <svg class="heart" viewBox="0 0 32 29.6">
-                  <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
-                	c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
-                </svg>
-            </div>
-            <div id="h4c-title" class="h4c-header-widget">
-                HACK FOR A CAUSE
-            </div>
-
-            <div id="h4c-date" class="h4c-header-widget">
-                <strong>APRIL 6-8 2018</strong></div>
-            <div id="h4c-disc" class="h4c-header-widget">
-                <strong>Philanthropic Hackathon</strong></div>
-            <div id="h4c-location" class="h4c-header-widget">
-                <strong>Located in Eugene Oregon</strong></div>
-            <div id="h4c-hosted" class="h4c-header-widget">
-                <strong>Hosted by Technology Association of Oregon</strong></div>
+<div id="h4c-header" class="flexcol">
+    <div id="h4c-title-join">
+        (JOIN TEAM &lt;CHOOSE PROBLEM&gt; CREATE SOLUTION)
+    </div>
+    <div class="flexrow">
+        <div class="squarebrackets">
+            <svg class="heart" viewBox="0 0 32 29.6">
+          <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+        </svg>
+        </div>
+        <div id="h4c-title">
+            <p id="h4c-title">HACK FOR A CAUSE</p>
         </div>
     </div>
-</div>
-<div id="h4c-buttons">
-    <div id="compete-button" class="h4c-header-widget"><button class="button">COMPETE</button></div>
-    <div id="sponsor-button" class="h4c-header-widget"><button class="button">SPONSOR</button></div>
+    <div id="h4c-dates">
+        <strong>APRIL 6-8 2018</strong>
+    </div>
+    <div id="h4c-description">
+        <strong>Philanthropic Hackathon</strong></div>
+    <div id="h4c-description">
+        <strong>Located in Eugene Oregon</strong></div>
+    <div id="h4c-description">
+        <strong>Hosted by Technology Association of Oregon</strong></div>
+
+    <div class="flexrow">
+        <div id="h4c-button"><a class="button" href="">COMPETE</a></div>
+        <div id="h4c-button"><a class="button" href="">SPONSOR</a></div>
+    </div>
 </div>
